@@ -1,0 +1,25 @@
+{
+  "name": "@agent-pay/sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@agent-pay/shared": "workspace:*",
+    "viem": "^2.43.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0"
+  }
+}
